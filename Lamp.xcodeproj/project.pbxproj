@@ -13,6 +13,8 @@
 		00C45B1525C289E600BD0023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C45B1425C289E600BD0023 /* Assets.xcassets */; };
 		00C45B1825C289E600BD0023 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C45B1725C289E600BD0023 /* Preview Assets.xcassets */; };
 		00C45B1B25C289E600BD0023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C45B1925C289E600BD0023 /* LaunchScreen.storyboard */; };
+		00C45B2525C28AF200BD0023 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C45B2425C28AF200BD0023 /* Home.swift */; };
+		00C45B2925C298C500BD0023 /* Dots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C45B2825C298C500BD0023 /* Dots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		00C45B1725C289E600BD0023 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		00C45B1A25C289E600BD0023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C45B1C25C289E600BD0023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C45B2425C28AF200BD0023 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		00C45B2825C298C500BD0023 /* Dots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		00C45B0D25C289E100BD0023 /* Lamp */ = {
 			isa = PBXGroup;
 			children = (
+				00C45B2325C28AE600BD0023 /* View */,
 				00C45B0E25C289E100BD0023 /* AppDelegate.swift */,
 				00C45B1025C289E100BD0023 /* SceneDelegate.swift */,
 				00C45B1225C289E100BD0023 /* ContentView.swift */,
@@ -73,6 +78,15 @@
 				00C45B1725C289E600BD0023 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00C45B2325C28AE600BD0023 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00C45B2425C28AF200BD0023 /* Home.swift */,
+				00C45B2825C298C500BD0023 /* Dots.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +161,8 @@
 			files = (
 				00C45B0F25C289E100BD0023 /* AppDelegate.swift in Sources */,
 				00C45B1125C289E100BD0023 /* SceneDelegate.swift in Sources */,
+				00C45B2925C298C500BD0023 /* Dots.swift in Sources */,
+				00C45B2525C28AF200BD0023 /* Home.swift in Sources */,
 				00C45B1325C289E100BD0023 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
