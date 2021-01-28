@@ -16,6 +16,9 @@ struct Home: View {
     @State var anlge : Double = 0
     @State var on = true
     
+    @State var from : Date = Date()
+    @State var to : Date = Date()
+    
     var body: some View {
         
         VStack {
@@ -116,7 +119,7 @@ struct Home: View {
                     Text("Power Saver")
                         .font(.title)
                         .fontWeight(.heavy)
-                        .foregroundColor(.white)
+                        .foregroundColor(.primary)
                     
                     Toggle("", isOn: $on)
                         .labelsHidden()
@@ -124,11 +127,42 @@ struct Home: View {
                 }
                 .padding(.vertical)
                 .padding(.horizontal, 20)
-                .background(Color.gray.opacity(0.3))
+                .background(BlurView().cornerRadius(15))
                 .clipShape(Capsule())
             }
             .padding()
 
+            HStack {
+                VStack(alignment: .leading, spacing: 10, content: {
+                    Text("Schedule")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.black)
+                    
+                    Text("From")
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    
+                    HStack (spacing: 10, content: {
+                        
+                        DatePicker("", selection: $from, displayedComponents: [.hourAndMinute])
+                            .labelsHidden()
+                            .accentColor(.black)
+                        
+                        Text("to")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                        
+                        DatePicker("", selection: $to, displayedComponents: [.hourAndMinute])
+                            .labelsHidden()
+                            .accentColor(.black)
+                    })
+                })
+                
+                Spacer()
+            }
+            .padding()
+            
             
             Spacer()
         }
